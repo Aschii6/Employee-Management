@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.EmployeePageController">
+   <children>
+      <TableView fx:id="tasksTV" layoutX="14.0" layoutY="40.0" prefHeight="345.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="taskDescColumn" prefWidth="200.0" text="Task description" />
+        </columns>
+      </TableView>
+      <Label layoutX="79.0" layoutY="14.0" text="Current tasks" />
+      <Button layoutX="431.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+      <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleCompleteTask" text="Complete task" />
+   </children>
+</AnchorPane>

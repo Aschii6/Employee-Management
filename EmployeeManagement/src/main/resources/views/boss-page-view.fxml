@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.BossPageController">
+
+    <TableView fx:id="employeesTV" layoutX="14.0" layoutY="40.0" prefHeight="345.0" prefWidth="250.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="60.0" text="Id" />
+            <TableColumn fx:id="nameColumn" prefWidth="85.0" text="Name" />
+            <TableColumn fx:id="loginTimeColumn" prefWidth="105.0" text="loginTime"/>
+        </columns>
+    </TableView>
+    <Label layoutX="93.0" layoutY="14.0" text="Active employees" />
+    <TextArea fx:id="taskDescTA" layoutX="342.0" layoutY="40.0" prefHeight="110.0" prefWidth="200.0" />
+    <Label layoutX="399.0" layoutY="14.0" text="Task description" />
+    <Button layoutX="410.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleGiveTask" text="Give task" />
+    <Button layoutX="531.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+
+</AnchorPane>
